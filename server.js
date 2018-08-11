@@ -79,10 +79,12 @@ app.get('/err' , (req , res) => {
 })
 
 // app listens on 3000 port 
-app.listen( 3000 , () => {
-    console.log(' app listening on 3000 '); 
-})
+//app.listen( 3000 , () => {
+  //  console.log(' app listening on 3000 '); 
+//})
 
+app.listen(process.env.PORT || 3000);
+console.log(' app listening on 3000 '); 
 
 
 // helper functions 
